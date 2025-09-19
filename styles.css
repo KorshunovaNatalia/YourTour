@@ -1213,7 +1213,7 @@ body{
 .images-tour{
     width: 100%;
     height: auto;
-    gap: 97px;
+    gap: 98px;
     opacity: 1;    
     display: flex;
     flex-direction: column;
@@ -1386,7 +1386,7 @@ body{
 .story-tour{
     width: 100%;
     height: auto;
-    gap: 97px;
+    gap: 98px;
     opacity: 1;
     display: flex;
     flex-direction: column;
@@ -1510,7 +1510,7 @@ body{
     margin: 0;
 }
 .story-tour__card-text{
-    gap: 28px;
+    gap: 26px;
     display: flex;
     flex-direction: column;
 }
@@ -1857,6 +1857,7 @@ body{
     }
 
 }
+
 
 
 
