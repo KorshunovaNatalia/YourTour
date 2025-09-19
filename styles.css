@@ -1571,6 +1571,7 @@ body{
     }
     .story-tour__social a{
         line-height:131%;
+    }
 }
 @media (min-width: 360px) and (max-width: 1023px){
     .story-tour{
@@ -1866,6 +1867,7 @@ body{
     }
 
 }
+
 
 
 
