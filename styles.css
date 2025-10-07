@@ -474,6 +474,9 @@ body{
     .selection-tour__content h3{
         width: 350px;
     }
+    .selection-tour__item a{
+        padding-bottom: 6px;
+    }
 }
 @media (min-width: 360px) and (max-width: 1023px){
     .selection-tour{
@@ -1216,6 +1219,9 @@ body{
     .review-tour__card1, .review-tour__card2{
         width: 450px;
     }
+    .review-tour{
+        gap: 99px;
+    }
 }
 @media (min-width: 360px) and (max-width: 1023px){
     .review-tour__cards{
@@ -1323,6 +1329,9 @@ body{
     object-fit: cover;
 }
 @media (min-width: 1024px) and (max-width: 1919px){
+    .images-tour{
+        gap: 98px;
+    }
     .images-tour__container{
         gap: 20px;
         padding-left: 20px;
@@ -1941,4 +1950,5 @@ body{
     }
 
 }
+
 
