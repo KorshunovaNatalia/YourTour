@@ -70,7 +70,7 @@ document.querySelector('.form-tour__button-find').addEventListener('click', func
                 flag = false;
         } else 
         if (input.type === 'tel') {
-            if (input.value.length < 10) 
+            if (input.value.length < 14) 
                 flag = false;
         } else 
         if (input.type === 'checkbox') {
@@ -92,4 +92,5 @@ document.querySelector('.form-tour__button-find').addEventListener('click', func
     } else {
         alert('Поля должны быть заполнены!');
     }
+
 });
