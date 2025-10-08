@@ -1328,6 +1328,11 @@ body{
     object-position: center center;
     object-fit: cover;
 }
+@media (min-width: 1920px) {
+    .images-tour__img9 {
+        content: url("images/Путешествия/travel\ photo-13\(1920\).png");
+    }
+}
 @media (min-width: 1024px) and (max-width: 1919px){
     .images-tour{
         gap: 98px;
@@ -1950,5 +1955,6 @@ body{
     }
 
 }
+
 
 
