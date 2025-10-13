@@ -70,7 +70,7 @@ document.querySelector('.form-tour__button-find').addEventListener('click', func
                 flag = false;
         } else 
         if (input.type === 'tel') {
-            if (input.value.length < 14) 
+            if (input.value.length < 10) 
                 flag = false;
         } else 
         if (input.type === 'checkbox') {
@@ -94,3 +94,4 @@ document.querySelector('.form-tour__button-find').addEventListener('click', func
     }
 
 });
+
