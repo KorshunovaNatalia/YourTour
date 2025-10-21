@@ -128,7 +128,7 @@ input[type="checkbox"]:checked + p{
     float: right;
     margin-left: auto;
     cursor: pointer;
-    background-image: url(/images/close.png);
+    background-image: url(images/close.png);
     width: 15px;
     height: 15px;
     background-size: contain;
@@ -234,4 +234,5 @@ input[type="checkbox"]:checked + p{
         box-sizing: border-box;
         padding-left: 0;
     }
+
 }
