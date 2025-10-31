@@ -51,8 +51,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;    
-    gap: 30px;
-    padding: 0 30px;
+    gap: 19px;
+    padding: 0 20px;
     box-sizing: border-box;
     opacity: 1;
 }
@@ -112,6 +112,12 @@
         justify-content: center;
         gap: 20px;   
     }  
+    .images-tour__img1{
+        object-fit: fill !important;
+    }
+    .images-tour__img4{
+        object-fit: fill !important;
+    }
     .images-tour__img1, 
     .images-tour__img3, 
     .images-tour__img4, 
@@ -289,4 +295,5 @@
     .images-tour__img13 {
         display: none;
     }
+
 }
