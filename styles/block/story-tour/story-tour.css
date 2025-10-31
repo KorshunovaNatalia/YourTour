@@ -213,7 +213,7 @@
 }
 @media (max-width: 768px){
     .story-tour{
-        gap: 51px;
+        gap: 50px;
         padding: 0 21px 0 21px;
     }
     .story-tour__header{
@@ -274,10 +274,11 @@
         display: none;
     }
     .story-tour__button .selection-tour__card-button{
-        top: 390px;
+        top: 391px;
         left: 15px;
         width: auto;
     }
 
 }
+
 
