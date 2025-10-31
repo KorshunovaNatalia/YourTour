@@ -1,0 +1,292 @@
+/*БЛОК "Фотографии путешествий"*/
+.images-tour{
+    scroll-margin-top: 100px;    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 100px;
+    box-sizing: border-box;    
+    opacity: 1;    
+}
+.images-tour__header{
+    width: 100%;
+    max-width: 723px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 30px;
+    opacity: 1;
+}
+.images-tour__header h2{
+    height: auto;
+    margin: 0;
+    padding: 0; 
+    color: var(--black);       
+    font-weight: var(--font-weight_bold);
+    font-size: 59px;
+    line-height: 124%;
+    text-align: center;
+    opacity: 1;
+}
+.images-tour__header p{
+    width: 100%;
+    max-width: 723px;
+    height: auto; 
+    margin: 0;
+    padding: 0;   
+    color: var(--gray_300);        
+    font-weight: var(--font-weight_normal);
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    opacity: 1;
+}
+.images-tour__container{
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 30px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    opacity: 1;
+}
+.images-tour__group0,
+.images-tour__group1,
+.images-tour__group2{
+    display: flex;    
+    gap: 30.2px;
+}
+.images-tour__img1{
+    width: 444px;
+}
+.images-tour__img2,
+.images-tour__img3{
+    width: 441.5px;
+}
+.images-tour__img4{
+    width: 443px;
+}
+.images-tour__img5{
+    width: 349.16px;
+}
+.images-tour__img6,
+.images-tour__img7,
+.images-tour__img8{
+    width: 347.32px;
+}
+.images-tour__img9{
+    width: 348.87px;
+    object-position: center !important;
+}
+.images-tour__group2 img{
+    width: 442.5px;
+}
+.images-tour__container img{
+    height: 301px;
+    border-radius: 50px; 
+    object-fit: cover;    
+    object-position: center center;
+}
+@media (min-width: 1920px) {
+    .images-tour__img9 {
+        content: url("../../../public/images/travel_photo-13(1920).png");
+    }
+}
+@media (max-width: 1200px){
+    .images-tour__group1{
+        width: 100%;
+        justify-content: center;
+        display: flex;  
+        gap: 20px;              
+        padding: 10px 0 10px 0;
+    }
+    .images-tour__group0,
+    .images-tour__group2{
+        width: 100%;
+        justify-content: center;
+        gap: 20px;   
+    }  
+    .images-tour__img1, 
+    .images-tour__img3, 
+    .images-tour__img4, 
+    .images-tour__img11, 
+    .images-tour__img10, 
+    .images-tour__img12{
+        width: calc(33.333% - 14px) !important;
+    }
+    .images-tour__img9, 
+    .images-tour__img8, 
+    .images-tour__img6, 
+    .images-tour__img5{
+        width: calc(25% - 15px) !important;
+    }
+    .images-tour__img2, 
+    .images-tour__img7, 
+    .images-tour__img13{
+        display: none;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1919px){
+    .images-tour__container{
+        padding: 0 20px;
+    }
+    .images-tour__group0,
+    .images-tour__group1,
+    .images-tour__group2{
+        width: 100%;
+        justify-content: center;
+    }
+    .images-tour__img1,
+    .images-tour__img2,
+    .images-tour__img3,
+    .images-tour__img4,
+    .images-tour__img10,
+    .images-tour__img11,
+    .images-tour__img12,
+    .images-tour__img13{
+        width: calc(25% - 15px) !important;
+    }
+    .images-tour__img5,
+    .images-tour__img6,
+    .images-tour__img7,
+    .images-tour__img8,
+    .images-tour__img9{
+        width: calc(20% - 16px) !important;
+    }
+}
+@media (min-width:1023px) and (max-width:1024px){
+    .images-tour__img1{
+        object-fit: fill !important;
+    }
+    .images-tour__img4{
+        object-fit: fill !important;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .images-tour{
+        gap: 100px;
+    }
+    .images-tour__container{
+        max-width: 100%;        
+        gap: 20px;
+        padding: 0 20px;
+    }
+    .images-tour__header{
+        gap: 30px;
+        max-width: 90%;
+    }
+    .images-tour__group1{
+        width: 100%;
+        display: flex;         
+        justify-content: center;
+        gap: 20px;              
+        padding: 10px 0 10px 0;
+    }
+    .images-tour__group0,
+    .images-tour__group2{
+        width: 100%;
+        justify-content: center;
+        gap: 20px;   
+    }  
+    .images-tour__img1, 
+    .images-tour__img3, 
+    .images-tour__img4, 
+    .images-tour__img11, 
+    .images-tour__img10, 
+    .images-tour__img12{
+        width: calc(33.333% - 14px) !important;
+    }
+    .images-tour__img9, 
+    .images-tour__img8, 
+    .images-tour__img6, 
+    .images-tour__img5{
+        width: calc(25% - 15px) !important;
+    }
+    .images-tour__img2, 
+    .images-tour__img7, 
+    .images-tour__img13{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .images-tour{
+        gap: 50px;
+    }
+    .images-tour__header{
+        width: 100%;
+        max-width: 100%;
+        gap: 20.5px;
+    }
+    .images-tour__header h2{
+        width: 100%;
+        max-width: 318px;
+        font-size: 34px;  
+        letter-spacing: 0.7px;  
+        line-height: 112%;    
+    }
+    .images-tour__header p{
+        width: 100%;
+        max-width: 318px;
+        font-size: 16px;
+        line-height: 142%;
+    }
+    .images-tour__container img{
+        border-radius: 20px; 
+    }
+    .images-tour__container{
+        max-width: 100%;     
+        max-width: 100%;   
+        gap: 18px;
+        padding: 0 21px;
+    }
+    .images-tour__group1{
+        width: 100%;
+        display: flex;         
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+    .images-tour__img1, 
+    .images-tour__img4{
+        width: calc(50% - 9px) !important;
+        height: 110px !important;
+    }
+    .images-tour__group0{
+        width: 100%;
+        justify-content: center;
+        display: flex;        
+        gap: 18px;
+    }
+    .images-tour__group2{
+        width: 100%;
+        display: flex;           
+        justify-content: center;
+        gap: 10px;
+    }
+    .images-tour__img10, 
+    .images-tour__img11{
+        width: calc(50% - 5px) !important;
+        height: 110px !important;
+    }
+    .images-tour__img9,
+    .images-tour__img8, 
+    .images-tour__img5{
+        width: calc(33.333% - 7px) !important;
+        height: 110px !important;
+        gap: 10px;
+    }
+    .images-tour__img2,
+    .images-tour__img3,
+    .images-tour__img6,
+    .images-tour__img7,
+    .images-tour__img12,
+    .images-tour__img13 {
+        display: none;
+    }
+}
