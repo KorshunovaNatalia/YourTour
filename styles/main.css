@@ -1,0 +1,10 @@
+@import url('common/library.css');
+@import url('common/common-styles.css');
+@import url('block/header/header.css');
+@import url('block/selection-tour/selection-tour.css');
+@import url('block/collect-tour/collect-tour.css');
+@import url('block/review-tour/review-tour.css');
+@import url('block/images-tour/images-tour.css');
+@import url('block/story-tour/story-tour.css');
+@import url('block/email-tour/email-tour.css');
+@import url('block/footer/footer.css');
