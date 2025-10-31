@@ -222,7 +222,7 @@
 }
 @media (max-width: 768px){
     .images-tour{
-        gap: 50px;
+        gap: 49px;
     }
     .images-tour__header{
         width: 100%;
@@ -297,5 +297,6 @@
     }
 
 }
+
 
 
