@@ -124,6 +124,9 @@
     opacity: 1;
 }
 @media (max-width: 1200px){
+    .review-tour{
+        gap: 99.3px;
+    }
     .review-tour__cards{
         max-width: 100%;
         justify-content: center;
@@ -206,4 +209,5 @@
     }
 
 }
+
 
