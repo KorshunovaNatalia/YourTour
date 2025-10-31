@@ -86,7 +86,7 @@
         max-width: 100%;
         text-align: center;
         align-items: center;
-        gap: 19px;
+        gap: 20px;
     }
     .email-tour__header h3{
         font-size: 23px;
@@ -103,5 +103,6 @@
     }
 
 }
+
 
 
