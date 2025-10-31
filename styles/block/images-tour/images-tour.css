@@ -100,7 +100,7 @@
 }
 @media (max-width: 1200px){
     .images-tour__container{
-        gap: 21px;
+        gap: 20px;
     }
     .images-tour__group1{
         width: 100%;
@@ -300,6 +300,7 @@
     }
 
 }
+
 
 
 
