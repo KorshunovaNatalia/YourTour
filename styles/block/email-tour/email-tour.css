@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;    
-    gap: 30px;
+    gap: 31px;
     padding: 0 126px;  
     box-sizing: border-box;   
     flex-wrap: wrap;       
@@ -100,4 +100,5 @@
     .email-tour__header a:hover{
         border-bottom: 1.5px solid var(--black);
     }
+
 }
