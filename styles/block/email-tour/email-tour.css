@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;    
-    gap: 30px;
+    gap: 31px;
     padding: 0 126px;  
     box-sizing: border-box;   
     flex-wrap: wrap;       
@@ -74,6 +74,7 @@
         max-width: 100%;        
         padding: 0 35px 0 35px;
         text-align: center;
+        gap: 30px;
     }
     .email-tour img{
         width: 130px;
@@ -102,4 +103,5 @@
     }
 
 }
+
 
