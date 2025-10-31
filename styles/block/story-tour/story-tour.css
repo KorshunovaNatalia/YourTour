@@ -160,7 +160,7 @@
     opacity: 1;
 }
 .story-tour__button .selection-tour__card-button{
-    top: 473px;
+    top: 471px;
     left: 40px;    
     width: 199px;
     height: 42px;
@@ -175,7 +175,7 @@
     opacity: 1;
 }
 .story-tour__social a{
-    margin: 0;    
+    margin: -2px 0 0 0;    
     font-weight: var(--font-weight_normal);
     font-size: 20px;
     line-height: 142%;
@@ -280,3 +280,4 @@
     }
 
 }
+
