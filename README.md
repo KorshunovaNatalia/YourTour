@@ -28,23 +28,5 @@
 8. `Футер` - ссылки на соцсети (telegram, facebook, VK)
 
 ## Структура проекта
-your-tour/
-|--- public/
-|    |--- icon/
-|    |___ images/
-|--- script/
-|    |___ script.js
-|--- styles/
-|    |--- block/
-|         |--- header/
-|         |--- selection-tour/
-|         |--- collect-tour/
-|         |--- review-tour/
-|         |--- images-tour/
-|         |--- story-tour/
-|         |--- email-tour/
-|         |___ footer/
-|    |--- common/
-|    |___ main.css
-|--- index.html
-|___ README.md
+![Файловая структура проекта](./public/images/project.png)
+
