@@ -132,9 +132,8 @@
     }
     .review-tour__card1, 
     .review-tour__card2{
-        width: 405px;
-        padding-top: 39px;
-        padding-left: 40px;
+        padding-top: 42px;
+        padding-left: 39px;
     }
 }
 @media (min-width: 769px) and (max-width: 1024px){
@@ -205,4 +204,5 @@
         padding-top: 39.4px;
         align-items: end;
     }
+
 }
