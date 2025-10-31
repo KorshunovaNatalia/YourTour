@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;    
-    gap: 31px;
+    gap: 30px;
     padding: 0 126px;  
     box-sizing: border-box;   
     flex-wrap: wrap;       
@@ -102,3 +102,4 @@
     }
 
 }
+
