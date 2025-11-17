@@ -148,7 +148,7 @@
     transform: translateY(-50%);
     width: 26px;
     height: 26px;
-    background-image: url('/public/icon/ic-dropdown.svg');
+    background-image: url('../../public/icon/ic-dropdown.svg');
     background-repeat: no-repeat;
     background-position: center;
     pointer-events: none;
@@ -345,7 +345,7 @@
 
 .accept-checkbox input[type="checkbox"]:checked{
     border-color: var(--black);   
-    background-image: url(../../../public/icon/checkbox.svg);     
+    background-image: url(../../public/icon/checkbox.svg);     
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -661,4 +661,5 @@
     .form-tour__button{
         gap: 10px;
     }
+
 }
