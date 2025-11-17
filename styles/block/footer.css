@@ -62,7 +62,7 @@
 .icon-tg{ 
     width: 26px;
     border-bottom: none !important;
-    background-image: url('/public/icon/telegram.svg'); 
+    background-image: url('../../public/icon/telegram.svg'); 
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -70,7 +70,7 @@
 .icon-fb{ 
     width: 26px;
     border-bottom: none !important;
-    background-image: url('/public/icon/fb.svg'); 
+    background-image: url('../../public/icon/fb.svg'); 
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -78,7 +78,7 @@
 .icon-vk{ 
     width: 26px;
     border-bottom: none !important;
-    background-image: url('/public/icon/vk.svg'); 
+    background-image: url('../../public/icon/vk.svg'); 
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -219,4 +219,5 @@
     .footer__vkontakte{
         width: 95px;
     }
+
 }
