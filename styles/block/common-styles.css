@@ -1,0 +1,34 @@
+/*Общие стили*/
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body, button, input, select, textarea{
+    font-family: var(--font-family);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;    
+    background: var(--beige_100);
+    font-family: var(--font-family);
+}
+
+.content-all{
+    display: flex;
+    flex-direction: column;
+    margin-top: 135px;    
+    gap: 135px;
+}
+
+@media (max-width: 768px){
+    .content-all{
+        align-items: center;
+        margin-top: 75px;        
+        gap: 75px;
+    }
+}

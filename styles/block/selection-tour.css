@@ -1,0 +1,383 @@
+/*БЛОК "Выбери свой тур"*/
+
+.selection-tour{
+    scroll-margin-top: 100px;    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 53px;    
+    gap: 106px;
+    box-sizing: border-box;
+}
+
+.selection-tour__header{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.selection-tour__header h2{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0; 
+    color: var(--black);    
+    text-align: center;       
+    font-size: 59px;    
+    font-weight: var(--font-weight_bold);
+    line-height: 124%;
+}
+
+.selection-tour__item{
+    width: 100%;
+}
+
+.selection-tour__item ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;    
+    margin: 0;    
+    padding: 0;
+    gap: 30px;    
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.selection-tour__item a{
+    margin: 0;
+    padding-bottom: 5px;
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;    
+    font-size: 23px;    
+    font-weight: var(--font-weight_bold);
+    line-height: 122%;      
+    white-space: nowrap;    
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.selection-tour__item a.active {
+    color: var(--orange_200);
+    border-bottom-color: var(--orange_200);
+}
+
+.selection-tour__item a:not(.active):hover {
+    border-bottom-color: var(--black);
+}
+
+.selection-tour__cards{
+    width: 100%;
+    max-width: 1200px;  
+    height: auto;      
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.selection-tour__card{
+    position: relative;
+    width: 100%;
+    max-width: 370px;
+    min-width: 300px;
+    height: 531px;
+    flex: 1 1 300px;
+    overflow: hidden;   
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.selection-tour__card:hover{
+    cursor: pointer;
+}
+
+.selection-tour__card::before{
+    position: absolute;  
+    width: 100%;
+    height: 100%;      
+    content: "";
+    transition: transform 0.3s ease;
+}
+
+.tc1::before{
+    background-image: var(--gradient_card),
+                      url(../../../public/images/card-tour_photo-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;    
+}
+
+.tc2::before{
+    background-image: var(--gradient_card),
+                      url(../../../public/images/card-tour_photo-2.png);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;    
+}
+
+.tc3::before{
+    background-image: var(--gradient_card),
+                      url(../../../public/images/card-tour_photo-3.png);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;    
+}
+
+.tc4::before{
+    background-image: var(--gradient_card),
+                      url(../../../public/images/card-tour_photo-4.jpg);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;    
+}
+
+.tc5::before{
+    background-image: var(--gradient_card),
+                      url(../../../public/images/card-tour_photo-5.jpg);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;    
+}
+
+.tc6::before{
+    background-image: var(--gradient_card),
+                      url(../../../public/images/card-tour_photo-6.png);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;    
+}
+
+.selection-tour__card:hover::before{
+    transform: scale(1.2);
+}
+
+.selection-tour__container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;           
+    box-sizing: border-box;
+}
+
+.selection-tour__content{
+    width: 100%;
+    max-width: 247px;
+    height: auto;
+    display: flex;
+    flex-direction: column;    
+    gap: 16px;
+}
+
+.selection-tour__content h3{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    color: var(--white); 
+    font-size: 35px;    
+    font-weight: var(--font-weight_medium);
+    line-height: 123%;
+}
+
+.selection-tour__content p{
+    margin: 0; 
+    color: var(--white);       
+    font-size: 17px;    
+    font-weight: var(--font-weight_normal);
+    line-height: 142%;
+    letter-spacing: -0.2px;
+}
+
+.selection-tour__card-button{
+    position: absolute;
+    top: 446px;
+    left: 30px;
+    bottom: 50px;    
+    width: 199px;
+    height: 42px;    
+    display: flex;
+    align-items: center;
+    padding: 7px 20px;    
+    gap: 15px;
+    box-sizing: border-box;
+    border: none;    
+    border-radius: 50px;    
+    background: transparent;   
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-text {
+    width: 120px;
+    height: 28px;
+    margin: 0;   
+    color: var(--white);     
+    font-size: 23px;    
+    font-weight: var(--font-weight_medium);
+}
+
+.button-arrow {
+    width: 26px;
+    height: 26px;
+    background-image: url('/public/icon/arrow_bt.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.selection-tour__card:hover .selection-tour__card-button {
+    border: none;
+    background-color: var(--green_400);
+}
+
+.selection-tour__card:hover .selection-tour__card-button{
+    border: none;
+    background-color: var(--green_400);
+}
+
+.selection-tour__card-button:active{
+    background-color: var(--orange_200) !important;
+}
+
+
+@media (max-width: 1200px){
+    .selection-tour__cards{
+        max-width: 100%;
+        gap: 18px;
+    }
+
+    .selection-tour__card{
+        max-width: none;
+        min-width: auto;
+        flex: 1 1 calc(50% - 10px);        
+    }
+
+    .selection-tour__content{
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px){
+    .selection-tour{
+        padding: 0 40px;
+    }
+
+    .selection-tour__card{
+        max-width: none;
+        min-width: auto;
+        flex: 1 1 calc(50% - 10px);        
+    }
+
+    .selection-tour__cards{
+        max-width: 100%;
+        gap: 18px;
+    }
+
+    .selection-tour__item a{
+        padding-bottom: 6px;
+    }
+}
+
+@media (max-width: 768px){
+    .selection-tour{
+        padding: 0 21px;
+        gap: 50px;
+    }
+
+    .selection-tour__header{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        gap: 29px;
+    }
+
+    .selection-tour__header h2{
+        width: 100%;
+        font-size: 34px;
+        line-height: 112%;
+        letter-spacing: 0.66px;
+    }
+
+    .selection-tour__item{
+        width: 100%;
+        min-width: 310px;
+        height: auto;
+    }
+
+    .selection-tour__item a{
+        padding-bottom: 0px;        
+        font-size: 16px;
+        line-height: 144%;
+    }
+
+    .selection-tour__item ul{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .selection-tour__item li{
+        width: auto !important;
+    }
+
+    .selection-tour__cards{
+        width: 100%;
+        max-width: 100%;        
+        height: auto;
+        gap: 18px;
+    }
+
+    .selection-tour__card{
+        width: 100%;
+        min-width: auto;
+        height: 318px;        
+        flex: 1 1 100%;        
+        border-radius: 20px;
+    }
+
+    .selection-tour__container{
+        padding: 25px;
+    }
+
+    .selection-tour__content h3{
+        width: 100%;
+        font-size: 23px;        
+        font-weight: var(--font-weight_bold);
+        letter-spacing: 0.9px;
+    }
+
+    .selection-tour__content p{
+        font-size: 16px;
+        letter-spacing: -0.2px;
+    }
+
+    .selection-tour__content{
+        gap: 14px;
+    }
+
+    .selection-tour__card-button{
+        top: 259px;
+        left: 10px;
+        width: auto;
+        padding: 0px 15px;        
+        gap: 14px;
+    }
+    
+    .button-text {
+        width: auto;
+        height: auto;        
+        font-size: 16px;
+        font-weight: var(--font-weight_bold);
+        line-height: 142%;
+    }
+}
