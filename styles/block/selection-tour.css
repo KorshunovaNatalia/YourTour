@@ -109,7 +109,7 @@
 
 .tc1::before{
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-1.jpg);
+                      url(../../public/images/card-tour_photo-1.jpg);
     background-position: center center;
     background-size: cover;
     z-index: -1;    
@@ -117,7 +117,7 @@
 
 .tc2::before{
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-2.png);
+                      url(../../public/images/card-tour_photo-2.png);
     background-position: center center;
     background-size: cover;
     z-index: -1;    
@@ -125,7 +125,7 @@
 
 .tc3::before{
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-3.png);
+                      url(../../public/images/card-tour_photo-3.png);
     background-position: center center;
     background-size: cover;
     z-index: -1;    
@@ -133,7 +133,7 @@
 
 .tc4::before{
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-4.jpg);
+                      url(../../public/images/card-tour_photo-4.jpg);
     background-position: center center;
     background-size: cover;
     z-index: -1;    
@@ -141,7 +141,7 @@
 
 .tc5::before{
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-5.jpg);
+                      url(../../public/images/card-tour_photo-5.jpg);
     background-position: center center;
     background-size: cover;
     z-index: -1;    
@@ -149,7 +149,7 @@
 
 .tc6::before{
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-6.png);
+                      url(../../public/images/card-tour_photo-6.png);
     background-position: center center;
     background-size: cover;
     z-index: -1;    
@@ -230,7 +230,7 @@
 .button-arrow {
     width: 26px;
     height: 26px;
-    background-image: url('/public/icon/arrow_bt.svg');
+    background-image: url('../../public/icon/arrow_bt.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -380,4 +380,5 @@
         font-weight: var(--font-weight_bold);
         line-height: 142%;
     }
+
 }
