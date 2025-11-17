@@ -7,7 +7,7 @@
     min-height: 800px;
     background-image: var(--gradient_overlay), 
                      var(--gradient_header),
-                     url(../../../public/images/header_photo.png);
+                     url(../../public/images/header_photo.png);
     background-position: center center;                     
     background-size: cover;
 }
@@ -270,4 +270,5 @@
         line-height: 0%;        
         letter-spacing: -0.1px;
     }
+
 }
