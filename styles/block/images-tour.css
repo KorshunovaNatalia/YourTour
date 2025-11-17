@@ -105,7 +105,7 @@
 
 @media (min-width: 1920px) {
     .images-tour__img9 {
-        content: url("../../../public/images/travel_photo-13(1920).png");
+        content: url("../../public/images/travel_photo-13(1920).png");
     }
 }
 
@@ -330,4 +330,5 @@
     .images-tour__img13 {
         display: none;
     }
+
 }
