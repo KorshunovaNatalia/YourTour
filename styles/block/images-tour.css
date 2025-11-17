@@ -118,6 +118,11 @@
         gap: 20px;          
     }
 
+    .images-tour_container{
+        padding: 0 19px;
+        gap: 20px;
+    }
+
     .images-tour__group0,
     .images-tour__group2{
         width: 100%;
@@ -332,3 +337,4 @@
     }
 
 }
+
