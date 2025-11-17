@@ -123,6 +123,14 @@
         gap: 20px;
     }
 
+    .images-tour__img1{
+        object-fit: fill !important;
+    }
+
+    .images-tour__img4{
+        object-fit: fill !important;
+    }
+
     .images-tour__group0,
     .images-tour__group2{
         width: 100%;
@@ -337,5 +345,6 @@
     }
 
 }
+
 
 
