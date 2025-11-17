@@ -118,7 +118,7 @@
         gap: 20px;          
     }
 
-    .images-tour_container{
+    .images-tour__container{
         padding: 0 19px;
         gap: 20px;
     }
@@ -337,4 +337,5 @@
     }
 
 }
+
 
