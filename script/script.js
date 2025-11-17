@@ -1,10 +1,10 @@
 /*Навигация*/
-document.querySelector('.selection-tour__item').addEventListener('click', function(e){
-    if(e.target.tagName === 'A'){
+document.querySelectorAll('.selection-tour__item a').forEach(item => {
+    item.addEventListener('click', function(e){
         e.preventDefault();
-        this.querySelectorAll('a').forEach(a => a.classList.remove('active'));
-        e.target.classList.add('active');
-    }
+        document.querySelectorAll('.selection-tour__item a').forEach(a => a.classList.remove('active'));
+        this.classList.add('active');
+    });
 });
 
 /*Очистка формы*/
@@ -61,6 +61,8 @@ window.addEventListener('scroll', function(){
 document.querySelector('.form-tour__button-find').addEventListener('click', function(e) {
     e.preventDefault();
     const form = document.getElementById('form-tour');
+    if (!form) return;
+    
     const input = form.querySelectorAll('input, select');
     let flag = true;
     
