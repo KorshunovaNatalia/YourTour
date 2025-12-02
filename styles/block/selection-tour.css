@@ -110,7 +110,7 @@
 .tc1::before{
     z-index: -1;     
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-1.jpg);
+                      url(../../public/images/card-tour_photo-1.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -118,7 +118,7 @@
 .tc2::before{
     z-index: -1;    
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-2.png);
+                      url(../../public/images/card-tour_photo-2.png);
     background-position: center center;
     background-size: cover;
 }
@@ -126,7 +126,7 @@
 .tc3::before{
     z-index: -1;       
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-3.png);
+                      url(../../public/images/card-tour_photo-3.png);
     background-position: center center;
     background-size: cover;
 }
@@ -134,7 +134,7 @@
 .tc4::before{
     z-index: -1;    
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-4.jpg);
+                      url(../../public/images/card-tour_photo-4.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -142,7 +142,7 @@
 .tc5::before{
     z-index: -1;    
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-5.jpg);
+                      url(../../public/images/card-tour_photo-5.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -150,7 +150,7 @@
 .tc6::before{
     z-index: -1;    
     background-image: var(--gradient_card),
-                      url(../../../public/images/card-tour_photo-6.png);
+                      url(../../public/images/card-tour_photo-6.png);
     background-position: center center;
     background-size: cover;
 }
@@ -230,7 +230,7 @@
 .button-arrow {
     width: 26px;
     height: 26px;
-    background-image: url('/public/icon/arrow_bt.svg');
+    background-image: url(../../public/icon/arrow_bt.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
