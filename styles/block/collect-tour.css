@@ -643,6 +643,7 @@
         height: 47px;
         padding: 12px 30px;   
         font-size: 16px;
+        white-space: nowrap;
     }
 
     .form-tour__button-clear{
