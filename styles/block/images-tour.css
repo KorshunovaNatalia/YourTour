@@ -136,7 +136,7 @@
 
     .images-tour__img1,
     .images-tour__img4{
-        object-fit: fill;
+        object-fit: fill !important;
     } 
     
     .images-tour__img1, 
@@ -346,3 +346,4 @@
     }
 
 }
+
