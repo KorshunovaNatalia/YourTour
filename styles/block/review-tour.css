@@ -144,6 +144,11 @@
         max-width: 100%;
         gap: 18px;
     }
+
+    .review-tour__card1 p, 
+    .review-tour__card2 p{
+        line-height: 121%;
+    }
     
     .review-tour__card1, 
     .review-tour__card2{
@@ -220,3 +225,4 @@
     }
 
 }
+
