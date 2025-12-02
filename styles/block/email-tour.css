@@ -2,15 +2,15 @@
 
 .email-tour{
     scroll-margin-top: 100px;    
-    width: 100%;
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;    
-    gap: 30px;
+    flex-wrap: wrap;       
+    width: 100%;
+    height: auto;
     padding: 0 126px;  
     box-sizing: border-box;   
-    flex-wrap: wrap;       
+    gap: 30px;
 }
 
 .email-tour img{
@@ -22,11 +22,11 @@
 }
 
 .email-tour__header{
+    display: flex;
+    flex-direction: column;    
     width: 100%;
     max-width: 371px;
     height: auto;
-    display: flex;
-    flex-direction: column;    
     gap: 21px;
 }
 
@@ -34,27 +34,27 @@
     width: 100%;
     height: auto;
     margin: 0;   
-    color: var(--black);     
     font-size: 35px;    
-    font-weight: var(--font-weight_medium);
     line-height: 122%;
+    font-weight: var(--font-weight_medium);
+    color: var(--black);     
 }
 
 .email-tour__header p{
     width: 100%;
     height: auto;
     margin: 0;  
-    color: var(--gray_300);      
     font-size: 20px;    
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
+    font-weight: var(--font-weight_normal);
+    color: var(--gray_300);      
 }
 
 .email-tour__header a{
     color: var(--black);
-    text-decoration: none;
     border-bottom: 2px solid transparent;    
     transition: border-bottom 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
 .email-tour__header a:hover{
@@ -95,10 +95,10 @@
     }
 
     .email-tour__header{
-        max-width: 100%;
-        text-align: center;
         align-items: center;
-        gap: 19px;
+        max-width: 100%;
+        gap: 19px;        
+        text-align: center;
     }
 
     .email-tour__header h3{

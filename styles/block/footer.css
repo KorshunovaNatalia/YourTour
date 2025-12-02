@@ -1,44 +1,44 @@
 /*БЛОК "Футер"*/
 
 .footer{
-    width: 100%;
-    height: auto;
     display: flex;   
     align-items: center;
-    justify-content: center;     
+    justify-content: center;      
+    width: 100%;
+    height: auto;
+    margin-top: 135px;     
     gap: 214px;
-    margin-top: 135px;    
     background: var(--beige_200);    
 }
 
 .footer__container{
+    display: flex;    
+    align-items: center;    
+    justify-content: space-between;  
+    flex-wrap: wrap;    
     width: 100%;
     max-width: 1168px;
     height: auto;
-    display: flex;    
-    align-items: center;    
-    justify-content: space-between;
     padding: 30px 53px;    
-    flex-wrap: wrap;    
 }
 
 .footer__block{
+    display: flex;
+    align-items: center;
+    justify-content: center;     
     width: 100%;
     max-width: 408px;
     height: 28px;    
-    display: flex;
-    align-items: center;
-    justify-content: center;    
     gap: 25px;
 }
 
 .footer__tg-link, 
 .footer__fb-link, 
 .footer__vk-link{
-    width: auto;
     display: flex;    
     align-items: center;
-    justify-content: center;    
+    justify-content: center;      
+    width: auto;
     gap: 12px;
 }
 
@@ -46,72 +46,72 @@
     width: 222px;
     height: 28px;
     margin: 0;    
-    color: var(--gray_300); 
     font-size: 20px;       
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
+    font-weight: var(--font-weight_normal);
+    color: var(--gray_300); 
 }
 
 .footer__telegram a, 
 .footer__facebook a, 
 .footer__vkontakte a{
-    text-decoration: none;
     border-bottom: none;
+    text-decoration: none;
 }
 
 .icon-tg{ 
     width: 26px;
-    border-bottom: none !important;
-    background-image: url('../../public/icon/telegram.svg'); 
+    background-image: url('/public/icon/telegram.svg'); 
     background-repeat: no-repeat;
     background-position: center;
+    border-bottom: none !important;
 }
 
 .icon-fb{ 
     width: 26px;
-    border-bottom: none !important;
-    background-image: url('../../public/icon/fb.svg'); 
+    background-image: url('/public/icon/fb.svg'); 
     background-repeat: no-repeat;
     background-position: center;
+    border-bottom: none !important;
 }
 
 .icon-vk{ 
     width: 26px;
-    border-bottom: none !important;
-    background-image: url('../../public/icon/vk.svg'); 
+    background-image: url('/public/icon/vk.svg'); 
     background-repeat: no-repeat;
     background-position: center;
+    border-bottom: none !important;
 }
 
 .footer__telegram span, 
 .footer__facebook span, 
 .footer__vkontakte span{
     height: 25px;
-    color: var(--black);
     font-size: 20px;
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
-    text-decoration: none;  
+    font-weight: var(--font-weight_normal);
+    color: var(--black);
     border-bottom: 2px solid transparent;      
     transition: border-bottom 0.3s ease, color 0.3s ease;
+    text-decoration: none;  
 }
 
 .footer__telegram{
-    width: 115px;
     display: flex;
-    justify-content: right;
+    justify-content: right;    
+    width: 115px;
 }
 
 .footer__facebook{
-    width: 120px;
     display: flex;
-    justify-content: right;
+    justify-content: right;    
+    width: 120px;
 }
 
 .footer__vkontakte{
-    width: 123px;
     display: flex;
-    justify-content: right;
+    justify-content: right;    
+    width: 123px;
 }
 
 .footer__telegram span:hover, 
@@ -124,8 +124,8 @@
 .footer__telegram span:active, 
 .footer__facebook span:active, 
 .footer__vkontakte span:active{
-    border-bottom-color: var(--orange_200);
     color: var(--orange_200) !important;
+    border-bottom-color: var(--orange_200);
 }
 
 @media (max-width: 1200px){
@@ -155,17 +155,17 @@
 
     .footer__container{
         justify-content: center;
+        flex-wrap: wrap;
         padding: 21px;
         gap: 6px;
-        flex-wrap: wrap;
     }
 
     .footer__container p, 
     .footer__container span{
         width: auto;
         height: auto;
-        text-align: center;        
         font-size: 16px;
+        text-align: center;        
     }
 
     .footer__container span:hover{
@@ -219,5 +219,4 @@
     .footer__vkontakte{
         width: 95px;
     }
-
 }

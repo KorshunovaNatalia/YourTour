@@ -1,36 +1,36 @@
 /*БЛОК "Отзывы наших путешественников"*/
 
 .review-tour{
-    scroll-margin-top: 100px;    
-    width: 100%;
-    height: auto;
+    scroll-margin-top: 100px;   
     display: flex;
     flex-direction: column;
-    align-items: center;    
-    gap: 99px;
+    align-items: center;       
+    width: 100%;
+    height: auto;
     padding: 0 53px;  
-    box-sizing: border-box;      
+    box-sizing: border-box;    
+    gap: 97px;
 }
 
 .review-tour__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
     width: 100%;
     max-width: 529px;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
     gap: 30px;
 }
 
 .review-tour__header h2{
     width: 100%;
     height: auto;  
-    margin: 0;  
-    color: var(--black);  
-    text-align: center;          
+    margin: 0; 
     font-size: 59px;    
-    font-weight: var(--font-weight_bold);
     line-height: 124%;
+    font-weight: var(--font-weight_bold);
+    text-align: center;          
+    color: var(--black);  
 }
 
 .review-tour__header p{
@@ -38,30 +38,30 @@
     height: auto; 
     margin: 0;
     padding: 0;   
-    color: var(--gray_300); 
-    text-align: center;           
     font-size: 20px;    
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
+    font-weight: var(--font-weight_normal);
+    text-align: center;           
+    color: var(--gray_300); 
 }
 
 .review-tour__cards{
+    display: flex;
+    flex-wrap: nowrap;     
     width: 100%;
     max-width: 1170px;
     height: auto;
-    display: flex;
-    flex-wrap: nowrap;    
     gap: 30px;
 }
 
 .review-tour__card1, 
 .review-tour__card2{
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;    
     width: 100%;
     max-width: 570px;
     height: auto;
-    display: flex;  
-    flex-direction: column;
-    justify-content: space-between;
     padding: 40px;   
     box-sizing: border-box;    
     border-radius: 50px;
@@ -73,16 +73,16 @@
     width: 100%;
     height: auto;
     margin: 0;    
-    color: var(--black);
     font-size: 23px;    
-    font-weight: var(--font-weight_bold); 
-    line-height: 122%;
+    line-height: 122%;    
+    font-weight: var(--font-weight_bold);
+    color: var(--black);
 }
 
 .review-tour__card-author{
+    display: flex;      
     width: 100%;
     height: auto;
-    display: flex;  
     padding-top: 70px; 
     box-sizing: border-box;         
 }
@@ -97,10 +97,10 @@
 }
 
 .review-tour__author-info{
+    display: flex;
+    flex-direction: column;     
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;    
     gap: 8px;
 }
 
@@ -108,40 +108,41 @@
     width: 100%;
     height: auto;
     margin: 0;    
-    color: var(--black);    
     font-size: 35px;    
-    font-weight: var(--font-weight_medium);
     line-height: 122%;
+    font-weight: var(--font-weight_medium);
+    color: var(--black);    
 }
 
 .review-tour__author-info p{
     width: 100%;
-    height: auto;    
-    color: var(--gray_300);    
+    height: auto; 
     font-size: 17px;    
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
     letter-spacing: -0.2px;
+    font-weight: var(--font-weight_normal);
+    color: var(--gray_300);    
 }
 
 @media (max-width: 1200px){
     .review-tour__cards{
-        max-width: 100%;
         flex-wrap: nowrap;        
-        justify-content: center;
+        justify-content: center;        
+        max-width: 100%;
         gap: 22px;
     }
 
     .review-tour__card1, 
     .review-tour__card2{
-        padding-top: 41px;
-        padding-left: 39px;
+        width: 405px;
+        padding-top: 39px;
+        padding-left: 40px;
     }
 }
 @media (min-width: 769px) and (max-width: 1024px){
     .review-tour__cards{
+        justify-content: center;          
         max-width: 100%;
-        justify-content: center;        
         gap: 18px;
     }
     
@@ -152,7 +153,7 @@
     }
 
     .review-tour{
-        gap: 97px;
+        gap: 99px;
     }
 }
 
@@ -182,10 +183,10 @@
     }
 
     .review-tour__cards{
+        flex-wrap: wrap;        
+        justify-content: center;          
         width: 100%;
         max-width: 100%;
-        flex-wrap: wrap;        
-        justify-content: center;        
         gap: 18px;
     }
 
@@ -193,8 +194,8 @@
     .review-tour__card2{
         width: 100%;
         max-width: 100%;
+        flex: 1 1 100%;          
         padding: 20px 21px;
-        flex: 1 1 100%;        
         border-radius: 20px;
     }
 
@@ -215,10 +216,7 @@
     }
     
     .review-tour__card-author{
+        align-items: end;        
         padding-top: 39.5px;
-        align-items: end;
     }
-
 }
-
-

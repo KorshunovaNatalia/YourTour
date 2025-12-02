@@ -1,36 +1,36 @@
 /*БЛОК "Собери свой тур"*/
 
 .collect-tour{
-    scroll-margin-top: 100px;    
+    scroll-margin-top: 100px;   
+    display: flex;  
+    flex-direction: column;
+    align-items: center;        
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    gap: 100px;      
     padding: 0 53px;      
     box-sizing: border-box;     
+    gap: 100px;      
 }
 
 .collect-tour__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
     width: 100%;
     max-width: 458px;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
     gap: 30px;
 }
 
 .collect-tour__header h2{
     height: auto;
     margin: 0;
-    padding: 0; 
-    color: var(--black);   
-    text-align: center;    
-    font-size: 59px;        
-    font-weight: var(--font-weight_bold);
+    padding: 0;
+    font-size: 59px;   
     line-height: 124%;
+    font-weight: var(--font-weight_bold);
+    text-align: center;      
+    color: var(--black);      
 }
 
 .collect-tour__header p{
@@ -38,11 +38,11 @@
     height: auto; 
     margin: 0;
     padding: 0;   
-    color: var(--gray_300);    
-    text-align: center;  
     font-size: 20px;          
-    font-weight: var(--font-weight_normal);
     line-height: 140%;
+    font-weight: var(--font-weight_normal);
+    text-align: center;  
+    color: var(--gray_300);    
 }
 
 .form-tour{
@@ -56,16 +56,16 @@
 }
 
 .form-tour__container{
-    width: 100%;  
     display: flex;
     flex-wrap: wrap;      
+    width: 100%;  
     gap: 33px;
 }
 
 .form-tour__line{
-    width: 100%;  
     display: flex;  
     justify-content: center;        
+    width: 100%;  
     gap: 30px;
 }
 
@@ -75,11 +75,11 @@
 }
 
 .form-tour__label{
+    display: flex;
+    flex-direction: column;    
     width: 100%;
     max-width: 500px;
     height: auto;
-    display: flex;
-    flex-direction: column;
     gap: 8px;  
 }
 
@@ -89,10 +89,10 @@
     width: 100%;
     height: 28px;
     margin: 0;
-    color: var(--black);   
     font-size: 20px;     
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
+    font-weight: var(--font-weight_normal);
+    color: var(--black);   
 }
 
 .form-tour__label input::placeholder{
@@ -106,9 +106,9 @@
 
 .form-tour__label input[type="date"]{
     position: relative;
-    border: 1px solid var(--beige_200); 
     font-family: var(--font-family);
     letter-spacing: -0.8px; 
+    border: 1px solid var(--beige_200); 
 }
 
 .form-tour__label input[type="date"]::-webkit-datetime-edit{
@@ -136,19 +136,19 @@
 
 .form-tour__select{
     position: relative;  
-    width: 100%;      
     display: flex;
-    align-items: center;
+    align-items: center;    
+    width: 100%;      
 }
 
-.select-arrow {
+.select-arrow{
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
     width: 26px;
     height: 26px;
-    background-image: url('../../public/icon/ic-dropdown.svg');
+    background-image: url('/public/icon/ic-dropdown.svg');
     background-repeat: no-repeat;
     background-position: center;
     pointer-events: none;
@@ -168,22 +168,22 @@
 
 .form-tour__label input, 
 .form-tour__label select{
+    display: flex;  
     width: 100%;
     height: 68px;
-    display: flex;  
-    padding: 20px;      
-    gap: 10px;      
+    padding: 20px;    
     box-sizing: border-box;    
+    gap: 10px; 
+    font-family: var(--font-family);    
+    font-size: 20px;
+    line-height: 142%;
+    font-weight: var(--font-weight_normal);
     border: 1px solid var(--beige_200);  
     border-radius: 10px;  
     background: var(--beige_100);
-    font-family: var(--font-family);    
-    font-size: 20px;
-    font-weight: var(--font-weight_normal);
-    line-height: 142%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
     appearance: none;
     cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .form-tour__label input:hover, 
@@ -195,7 +195,7 @@
 
 .form-tour__label input:focus, 
 .form-tour__label select:focus,
-.form-tour__comment-label textarea:focus {
+.form-tour__comment-label textarea:focus{
     outline: none; 
     border: 1px solid var(--gray_300);    
     background: var(--beige_200);
@@ -203,65 +203,65 @@
 }
 
 .form-tour__comment{
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;    
+    width: 100%;
+    height: auto;
     gap: 8px;
 }
 
 .form-tour__comment-label{
-    width: 100%;    
     display: flex;
     flex-direction: column;    
+    width: 100%;    
     gap: 8px;
 }
 
 .form-tour__comment-label textarea{
+    display: flex; 
     width: 100%;
     height: 152px;
-    display: flex; 
-    padding: 20px;       
-    gap: 10px;
+    padding: 20px;   
     box-sizing: border-box;  
+    gap: 10px;
+    font-family: var(--font-family);
+    font-size: 20px;
     border: 1px solid var(--beige_200);       
     border-radius: 10px;   
     background: var(--beige_100);    
-    font-family: var(--font-family);
-    font-size: 20px;
     resize: none;  
     cursor: pointer; 
 }
 
 .form-tour__question{
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;    
+    width: 100%;
+    height: auto;
     gap: 8px;
 }
 
 .form-tour__question-radio{
+    display: flex;    
     width: 100%;
     height: auto;
-    display: flex;    
     gap: 31px;
 }
 
 .question-radio__yes,
 .question-radio__no{
-    width: auto;
-    height: 28px;
     display: flex;
     align-items: center;    
+    width: auto;
+    height: 28px;
     gap: 11px;
 }
 
 .form-tour__question-radio p{
     width: auto;
-    font-size: 20px;    
-    font-weight: var(--font-weight_normal);
+    font-size: 20px;
     line-height: 142%;
+    font-weight: var(--font-weight_normal);
 }
 
 .form-tour__question-radio input[type="radio"]{
@@ -271,8 +271,8 @@
     padding: 0;   
     border: 2.5px solid var(--black);
     border-radius: 100%;   
-    cursor: pointer;
     appearance: none;
+    cursor: pointer;
 }
 
 .form-tour__question-radio input[type="radio"]:checked{
@@ -281,21 +281,21 @@
 }
 
 .form-tour__accept{
-    width: 100%;    
     display: flex;
     align-items: center;
+    width: 100%;    
 }
 
 .accept-checkbox{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;          
     width: 100%;
     max-width: 562px;
     height: auto;    
-    display: flex;
-    align-items: center;
     margin: 0; 
     padding: 0; 
     gap: 19px;    
-    flex-wrap: wrap;          
 }
 
 .accept-checkbox p{
@@ -307,16 +307,16 @@
     height: auto;
     margin: 0;
     font-size: 17px;    
-    font-weight: var(--font-weight_normal);
     line-height: 142%;  
     letter-spacing: -0.2px;      
+    font-weight: var(--font-weight_normal);
 }
 
 .accept-checkbox a{
     color: var(--black);
-    text-decoration: none;
     border-bottom: 2px solid transparent;    
     transition: border-bottom 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
 .accept-checkbox a:hover{
@@ -345,37 +345,38 @@
 
 .accept-checkbox input[type="checkbox"]:checked{
     border-color: var(--black);   
-    background-image: url(../../public/icon/checkbox.svg);     
+    background-image: url(../../../public/icon/checkbox.svg);     
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .form-tour__button{
+    display: flex;    
     width: 100%;
     max-width: 500px;
     height: auto;
-    display: flex;    
     gap: 30px;
 }
 
 .form-tour__button-find{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 235px;
     height: 58px;
     padding: 15px 30px;
+    box-sizing: border-box;
     gap: 10px;    
+    font-size: 20px;     
+    line-height: 142%;    
+    font-weight: var(--font-weight_normal);
+    color: var(--white);     
     border: none;    
     border-radius: 10px; 
     background: var(--green_400);
-    cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.form-tour__button-find a{
-    color: var(--white);    
-    text-decoration: none;   
-    font-size: 20px;     
-    font-weight: var(--font-weight_normal);
-    line-height: 142%;    
+    cursor: pointer;
+    text-decoration: none;      
 }
 
 .form-tour__button-find:hover{
@@ -390,16 +391,16 @@
     width: 235px;
     height: 58px;
     padding: 15px 30px;
-    border: none;  
-    border-radius: 10px;     
-    background-color: var(--green_100);        
-    color: var(--green_400); 
     font-family: var(--font-family); 
     font-size: 20px;      
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
-    cursor: pointer; 
+    font-weight: var(--font-weight_normal);
+    color: var(--green_400); 
+    border: none;  
+    border-radius: 10px;     
+    background-color: var(--green_100);    
     transition: background-color 0.3s ease;
+    cursor: pointer; 
 }
 
 .form-tour__button-clear:hover{
@@ -475,7 +476,7 @@
 
     .collect-tour{
         padding: 0 21px;        
-        gap: 38.9px;
+        gap: 39px;
     }
 
     .collect-tour__header{
@@ -508,8 +509,8 @@
     }
 
     .form-tour__line{
-        height: auto;        
         flex-wrap: wrap;
+        height: auto;        
         gap: 30px;
     }
 
@@ -556,8 +557,8 @@
 
     .form-tour__label input[type="date"]{
         width: calc(100% + 3px);    
-        border: 1px solid var(--beige_200);
         letter-spacing: -0.5px;
+        border: 1px solid var(--beige_200);
     }
 
     .form-tour__comment{
@@ -583,9 +584,9 @@
     }
 
     .form-tour__question-radio{
+        justify-content: flex-start;
         width: 100%;
         height: auto;
-        justify-content: flex-start;
         gap: 30px;
     }
 
@@ -608,42 +609,42 @@
 
     .accept-checkbox input[type="checkbox"]{
         width: 20px;
+        min-width: 20px;        
         height: 20px;
-        min-width: 20px;
         min-height: 20px;
         border: 1.5px solid var(--black);
     }
 
     .accept-checkbox{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: start;        
         max-width: 100%;
         height: auto;
         max-height: 69px;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: start;
         gap: 10px;
     }
 
     .accept-checkbox p{
         width: 100%;
         font-size: 16px;
-        letter-spacing: -0.06px;
         line-height: 135%;
+        letter-spacing: -0.06px;
     }
 
     .accept-checkbox a{
         letter-spacing: -0.6px;
     }
 
-    .form-tour__button-find a{
-        width: 75px;
-        height: 23px;        
+    .form-tour__button-find{
         display: flex;
-        align-items: center;        
+        align-items: center;            
+        width: auto;
+        height: 47px;
+        padding: 12px 30px;   
         font-size: 16px;
     }
 
-    .form-tour__button-find, 
     .form-tour__button-clear{
         width: 134px;
         height: 47px;
@@ -661,5 +662,4 @@
     .form-tour__button{
         gap: 10px;
     }
-
 }

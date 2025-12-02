@@ -1,23 +1,23 @@
 /*БЛОК "Фотографии путешествий"*/
 
 .images-tour{
-    scroll-margin-top: 100px;    
-    width: 100%;
-    height: auto;
+    scroll-margin-top: 100px; 
     display: flex;
     flex-direction: column;
-    align-items: center;    
-    gap: 98px;
+    align-items: center;          
+    width: 100%;
+    height: auto;
     box-sizing: border-box;     
+    gap: 100px;
 }
 
 .images-tour__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
     width: 100%;
     max-width: 723px;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
     gap: 30px;
 }
 
@@ -25,11 +25,11 @@
     height: auto;
     margin: 0;
     padding: 0; 
-    color: var(--black);  
-    text-align: center;    
     font-size: 59px;         
-    font-weight: var(--font-weight_bold);
     line-height: 124%;
+    font-weight: var(--font-weight_bold);
+    text-align: center;    
+    color: var(--black);  
 }
 
 .images-tour__header p{
@@ -38,23 +38,23 @@
     height: auto; 
     margin: 0;
     padding: 0;   
-    color: var(--gray_300);  
-    text-align: center;    
     font-size: 20px;          
-    font-weight: var(--font-weight_normal);
     line-height: 140%;
+    font-weight: var(--font-weight_normal);
+    text-align: center;    
+    color: var(--gray_300);  
 }
 
 .images-tour__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;     
     width: 100%;
     max-width: 1920px;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;    
-    gap: 30px;
     padding: 0 30px;
     box-sizing: border-box;
+    gap: 30px;
 }
 
 .images-tour__group0,
@@ -78,17 +78,17 @@
 }
 
 .images-tour__img5{
-    width: 349.16px;
+    width: 349px;
 }
 
 .images-tour__img6,
 .images-tour__img7,
 .images-tour__img8{
-    width: 347.32px;
+    width: 347px;
 }
 
 .images-tour__img9{
-    width: 348.87px;
+    width: 349px;
     object-position: center !important;
 }
 
@@ -105,36 +105,23 @@
 
 @media (min-width: 1920px) {
     .images-tour__img9 {
-        content: url("../../public/images/travel_photo-13(1920).png");
+        content: url("../../../public/images/travel_photo-13(1920).png");
     }
 }
 
 @media (max-width: 1200px){
     .images-tour__group1{
-        width: 100%;
-        justify-content: center;
         display: flex;  
+        justify-content: center;
+        width: 100%;
         padding: 10px 0;
         gap: 20px;          
     }
 
-    .images-tour__container{
-        padding: 0 19px;
-        gap: 20px;
-    }
-
-    .images-tour__img1{
-        object-fit: fill !important;
-    }
-
-    .images-tour__img4{
-        object-fit: fill !important;
-    }
-
     .images-tour__group0,
     .images-tour__group2{
-        width: 100%;
         justify-content: center;
+        width: 100%;
         gap: 20px;   
     }  
 
@@ -169,8 +156,8 @@
     .images-tour__group0,
     .images-tour__group1,
     .images-tour__group2{
-        width: 100%;
         justify-content: center;
+        width: 100%;
     }
 
     .images-tour__img1,
@@ -214,22 +201,22 @@
     }
 
     .images-tour__header{
-        gap: 30px;
         max-width: 90%;
+        gap: 30px;
     }
 
     .images-tour__group1{
-        width: 100%;
         display: flex;         
         justify-content: center;
+        width: 100%;
         padding: 10px 0;        
         gap: 20px;              
     }
 
     .images-tour__group0,
     .images-tour__group2{
-        width: 100%;
         justify-content: center;
+        width: 100%;
         gap: 20px;   
     }  
 
@@ -294,9 +281,9 @@
     }
 
     .images-tour__group1{
-        width: 100%;
         display: flex;         
-        justify-content: center;
+        justify-content: center;        
+        width: 100%;
         padding: 0;        
         gap: 10px;
     }
@@ -308,16 +295,16 @@
     }
 
     .images-tour__group0{
-        width: 100%;
         display: flex;        
-        justify-content: center;
+        justify-content: center;        
+        width: 100%;
         gap: 18px;
     }
 
     .images-tour__group2{
-        width: 100%;
         display: flex;           
-        justify-content: center;
+        justify-content: center;        
+        width: 100%;
         gap: 10px;
     }
 
@@ -343,9 +330,4 @@
     .images-tour__img13 {
         display: none;
     }
-
 }
-
-
-
-

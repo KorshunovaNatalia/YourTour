@@ -1,8 +1,8 @@
 /*Общие стили*/
 
 html{
-    scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body, button, input, select, textarea{
@@ -14,8 +14,8 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;    
-    background: var(--beige_100);
     font-family: var(--font-family);
+    background: var(--beige_100);
 }
 
 .content-all{

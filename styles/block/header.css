@@ -7,7 +7,7 @@
     min-height: 800px;
     background-image: var(--gradient_overlay), 
                      var(--gradient_header),
-                     url(../../public/images/header_photo.png);
+                     url(../../../public/images/header_photo.png);
     background-position: center center;                     
     background-size: cover;
 }
@@ -21,12 +21,12 @@
     top: 0;
     left: 0;
     z-index: 100;
-    width: 100%;
-    height: 88px;
+    transform: translateY(0);
     display: flex;
     align-items: center;
-    justify-content: center;
-    transform: translateY(0);
+    justify-content: center;    
+    width: 100%;
+    height: 88px;
     transition: transform 0.6s ease-in-out;
 }
 
@@ -74,25 +74,25 @@
 }
 
 .header__block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
     width: 100%;
     max-width: 1168px;
     height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     box-sizing: border-box;
 }
 
 .header__block a{
     height: 25px;   
     margin: 0;
-    color: var(--white);
-    text-decoration: none;    
-    border-bottom: 1px solid transparent;    
     font-size: 20px;
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
+    font-weight: var(--font-weight_normal);
+    color: var(--white);
+    border-bottom: 1px solid transparent;    
     transition: border-bottom 0.3s ease;
+    text-decoration: none;    
 }
 
 .header__menu{
@@ -102,9 +102,9 @@
 
 .header__menu ul{
     display: flex;
-    gap: 50px;
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    gap: 50px;
     list-style: none;
 }
 
@@ -116,65 +116,67 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
-    height: 100vh;    
-    display: flex;
+    transform: translate(-50%, -50%);
+    display: flex;   
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    justify-content: center;     
+    width: 100%;
+    height: 100vh;    
     padding-top: 88px;
     box-sizing: border-box;
-    transform: translate(-50%, -50%);
+    gap: 50px;
 }
 
 .header__content h1{
     width: 768px;
     height: 315px;
     margin: 0;
-    color: var(--white);
-    text-align: center;    
     font-size: 96px;    
-    font-weight: var(--font-weight_bold);
     line-height: 109%;
     letter-spacing: 2px;   
+    font-weight: var(--font-weight_bold);
+    text-align: center;    
+    color: var(--white);
 }
 
 .header__content p{
     width: 562px;
     height: 56px;
-    margin: 0;    
-    color: var(--white);
-    text-align: center;     
+    margin: 0;  
     font-size: 20px;    
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
+    font-weight: var(--font-weight_normal);
+    text-align: center;     
+    color: var(--white);
 }
 
-.header__content button{
+.header__content a{
     width: 118px;
     height: 34px;
     padding: 5px 20px;
+    box-sizing: border-box;
+    font-size: 17px;    
+    line-height: 142%;    
+    letter-spacing: -0.2px;
+    font-weight: var(--font-weight_normal);
+    color: var(--black);     
     border: none;    
     border-radius: 10px;    
     background-color: var(--white);
-    color: var(--black);     
-    font-size: 17px;    
-    font-weight: var(--font-weight_normal);
-    line-height: 142%;    
-    letter-spacing: -0.2px;
-    cursor: pointer;  
     transition: background-color 0.3s ease, color 0.3s ease;   
+    cursor: pointer;  
+    text-decoration: none;
 }
 
-.header__content button:hover{
-    background: var(--orange_200);
+.header__content a:hover{
     color: var(--white);
+    background: var(--orange_200);
 }
 
-.header__content button:active{
-    background: var(--orange_100);
+.header__content a:active{
     color: var(--black);
+    background: var(--orange_100);
 }
 
 @media (max-width: 1200px){
@@ -263,12 +265,13 @@
         line-height: 144%;
     }
 
-    .header__content button{
+    .header__content a{
+        display: flex;
+        align-items: center;
         width: 114px;
-        height: 33px;
+        min-height: 33px;
         font-size: 16px;
         line-height: 0%;        
         letter-spacing: -0.1px;
     }
-
 }

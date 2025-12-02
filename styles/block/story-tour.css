@@ -2,22 +2,22 @@
 
 .story-tour{
     scroll-margin-top: 100px;    
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;    
-    gap: 100px;
+    align-items: center;      
+    width: 100%;
+    height: auto;
     padding: 0 53px;    
-    box-sizing: border-box;
+    box-sizing: border-box;  
+    gap: 100px;
 }
 
 .story-tour__header{
+    display: flex;
+    flex-direction: column;      
     width: 100%;
     max-width: 646px;
     height: auto;
-    display: flex;
-    flex-direction: column;    
     gap: 30px;
 }
 
@@ -25,11 +25,11 @@
     height: auto;
     margin: 0;
     padding: 0; 
-    color: var(--black);   
-    text-align: center;
     font-size: 59px;        
-    font-weight: var(--font-weight_bold);
     line-height: 124%;
+    font-weight: var(--font-weight_bold);
+    text-align: center;
+    color: var(--black);   
 }
 
 .story-tour__header p{
@@ -38,31 +38,31 @@
     height: auto; 
     margin: 0;
     padding: 0;   
-    color: var(--gray_300);    
-    text-align: center;     
     font-size: 20px;       
-    font-weight: var(--font-weight_normal);
     line-height: 140%;
+    font-weight: var(--font-weight_normal);
+    text-align: center;     
+    color: var(--gray_300);    
 }
 
 .story-tour__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
     width: 100%;
     max-width: 1170px;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
     gap: 50px;
 }
 
 .story-tour__card{
-    position: relative;    
+    position: relative;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;      
     width: 100%;
     height: auto;
     min-height: 567px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;  
     overflow: hidden;
     border-radius: 50px;
     background-position: center center;    
@@ -75,51 +75,51 @@
     width: 100%;
     height: 100%;       
     content: "";
-    transition: transform 300ms ease;
+    transition: transform 0.3s ease;
 }
 
 .card1::before{
-    background-image: var(--gradient_story),
-                      url(../../public/images/story_photo-1.png);
-    background-size: cover;
-    background-position: center center;
     z-index: -1;    
+    background-image: var(--gradient_story),
+                      url(../../../public/images/story_photo-1.png);
+    background-position: center center;
+    background-size: cover;
 }
 
 .card2::before{
-    background-image: var(--gradient_story),
-                      url(../../public/images/story_photo-2.png);
-    background-size: cover;
-    background-position: center center;
     z-index: -1;    
+    background-image: var(--gradient_story),
+                      url(../../../public/images/story_photo-2.png);
+    background-position: center center;
+    background-size: cover;
 }
 
 .card3::before{
-    background-image: var(--gradient_story),
-                      url(../../public/images/story_photo-3.png);
-    background-size: cover;
-    background-position: center center;
     z-index: -1;    
+    background-image: var(--gradient_story),
+                      url(../../../public/images/story_photo-3.png);
+    background-position: center center;
+    background-size: cover;
 }
 
 .story-tour__card-button{
     position: absolute;
     top: 473px;
     left: 40px;
-    bottom: 50px;    
+    bottom: 50px; 
+    display: flex;
+    align-items: center;       
     width: 199px;
     height: 42px;    
-    display: flex;
-    align-items: center;
     padding: 7px 20px;    
-    gap: 15px;
     box-sizing: border-box;
+    gap: 15px;
     border: none;    
     border-radius: 50px;    
     background: transparent;   
-    text-decoration: none;
-    cursor: pointer;
     transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .button-text {
@@ -127,16 +127,16 @@
     height: 28px;
     margin: 0;   
     padding: 0;
-    color: var(--white);     
     font-size: 23px;    
-    font-weight: var(--font-weight_medium);
     letter-spacing: 0.1px;
+    font-weight: var(--font-weight_medium);
+    color: var(--white);     
 }
 
 .button-arrow {
     width: 26px;
     height: 26px;
-    background-image: url('../../public/icon/arrow_bt.svg');
+    background-image: url('/public/icon/arrow_bt.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -161,23 +161,23 @@
 }
 
 .story-tour__content{
+    display: flex;
+    flex-direction: column;      
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;    
-    gap: 37px;
     padding: 60px 0 0 60px;
-    box-sizing: border-box;    
+    box-sizing: border-box;   
+    gap: 37px;
 }
 
 .story-tour__content h3{
     width: 100%;
     height: auto;   
     margin: 0;   
-    color: var(--white);   
     font-size: 35px;
-    font-weight: var(--font-weight_medium);
     line-height: 122%;
+    font-weight: var(--font-weight_medium);
+    color: var(--white);   
 }
 
 .story-tour__content p{
@@ -185,19 +185,19 @@
     max-width: 554px;
     height: auto;
     margin: 0;    
-    color: var(--white);  
     font-size: 20px;      
-    font-weight: var(--font-weight_normal);
     line-height: 140%;
+    font-weight: var(--font-weight_normal);
+    color: var(--white);  
 }
 
 .story-tour__content ul{
     margin: 0;    
     padding: 1px 0 0 30px;
-    color: var(--white);  
     font-size: 20px;      
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
+    font-weight: var(--font-weight_normal);
+    color: var(--white);  
 }
 
 .story-tour__card-text{
@@ -207,33 +207,33 @@
 }
 
 .story-tour__footer{
-    width: 100%;
-    height: auto;
     display: flex;    
     align-items: center;    
-    justify-content: space-between;
-    padding: 0 60px 62px 60px;
+    justify-content: space-between;    
+    width: 100%;
+    height: auto;
+    padding: 0 60px 60px 60px;
     box-sizing: border-box;    
 }
 
 .story-tour__social{
+    display: flex;
+    flex-wrap: wrap;       
     width: auto;
     height: 26px;    
-    display: flex;
-    flex-wrap: wrap;      
     gap: 34px;
     color: var(--white);     
 }
 
 .story-tour__social a{
     margin: 0;    
-    text-decoration: none;  
-    border-bottom: 2px solid transparent;   
     font-size: 20px;        
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
     letter-spacing: 0.2px;
+    font-weight: var(--font-weight_normal);
+    border-bottom: 2px solid transparent;   
     transition: border-bottom 0.3s ease, color 0.3s ease;
+    text-decoration: none;  
 }
 
 .story-tour__social a:hover{
@@ -282,8 +282,8 @@
     }
 
     .story-tour__header{
-        max-width: 100%;        
         align-items: center;        
+        max-width: 100%;        
         gap: 21px;
     }
 
@@ -322,8 +322,8 @@
         width: 100%;
         max-width: 150px;
         font-size: 23px;
-        font-weight: var(--font-weight_bold);
         letter-spacing: 1px;
+        font-weight: var(--font-weight_bold);
     }
 
     .story-tour__content p{
@@ -360,9 +360,7 @@
         width: auto;
         height: auto;        
         font-size: 16px;
-        font-weight: var(--font-weight_bold);
         line-height: 142%;
+        font-weight: var(--font-weight_bold);
     }
-
 }
-

@@ -2,23 +2,23 @@
 
 .selection-tour{
     scroll-margin-top: 100px;    
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
+    width: 100%;
+    height: auto;
     padding: 0 53px;    
-    gap: 106px;
     box-sizing: border-box;
+    gap: 106px;
 }
 
 .selection-tour__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
     width: 100%;
     max-width: 700px;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 35px;
 }
 
@@ -27,11 +27,11 @@
     height: auto;
     margin: 0;
     padding: 0; 
-    color: var(--black);    
-    text-align: center;       
     font-size: 59px;    
-    font-weight: var(--font-weight_bold);
     line-height: 124%;
+    font-weight: var(--font-weight_bold);
+    text-align: center;       
+    color: var(--black);    
 }
 
 .selection-tour__item{
@@ -39,28 +39,28 @@
 }
 
 .selection-tour__item ul{
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;    
     margin: 0;    
     padding: 0;
     gap: 30px;    
     list-style: none;
-    flex-wrap: wrap;
 }
 
 .selection-tour__item a{
     margin: 0;
     padding-bottom: 5px;
-    color: var(--black);
-    text-decoration: none;
-    border-bottom: 2px solid transparent;    
     font-size: 23px;    
-    font-weight: var(--font-weight_bold);
     line-height: 122%;      
+    font-weight: var(--font-weight_bold);
+    color: var(--black);
     white-space: nowrap;    
+    border-bottom: 2px solid transparent;    
     transition: border-bottom 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
 .selection-tour__item a.active {
@@ -73,13 +73,13 @@
 }
 
 .selection-tour__cards{
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;    
     width: 100%;
     max-width: 1200px;  
     height: auto;      
-    display: flex;
-    justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
 }
 
 .selection-tour__card{
@@ -108,51 +108,51 @@
 }
 
 .tc1::before{
+    z-index: -1;     
     background-image: var(--gradient_card),
-                      url(../../public/images/card-tour_photo-1.jpg);
+                      url(../../../public/images/card-tour_photo-1.jpg);
     background-position: center center;
     background-size: cover;
-    z-index: -1;    
 }
 
 .tc2::before{
+    z-index: -1;    
     background-image: var(--gradient_card),
-                      url(../../public/images/card-tour_photo-2.png);
+                      url(../../../public/images/card-tour_photo-2.png);
     background-position: center center;
     background-size: cover;
-    z-index: -1;    
 }
 
 .tc3::before{
+    z-index: -1;       
     background-image: var(--gradient_card),
-                      url(../../public/images/card-tour_photo-3.png);
+                      url(../../../public/images/card-tour_photo-3.png);
     background-position: center center;
     background-size: cover;
-    z-index: -1;    
 }
 
 .tc4::before{
+    z-index: -1;    
     background-image: var(--gradient_card),
-                      url(../../public/images/card-tour_photo-4.jpg);
+                      url(../../../public/images/card-tour_photo-4.jpg);
     background-position: center center;
     background-size: cover;
-    z-index: -1;    
 }
 
 .tc5::before{
+    z-index: -1;    
     background-image: var(--gradient_card),
-                      url(../../public/images/card-tour_photo-5.jpg);
+                      url(../../../public/images/card-tour_photo-5.jpg);
     background-position: center center;
     background-size: cover;
-    z-index: -1;    
 }
 
 .tc6::before{
+    z-index: -1;    
     background-image: var(--gradient_card),
-                      url(../../public/images/card-tour_photo-6.png);
+                      url(../../../public/images/card-tour_photo-6.png);
     background-position: center center;
     background-size: cover;
-    z-index: -1;    
 }
 
 .selection-tour__card:hover::before{
@@ -161,21 +161,21 @@
 
 .selection-tour__container{
     position: relative;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;    
+    width: 100%;
+    height: 100%;
     padding: 50px;           
     box-sizing: border-box;
 }
 
 .selection-tour__content{
+    display: flex;
+    flex-direction: column;     
     width: 100%;
     max-width: 247px;
     height: auto;
-    display: flex;
-    flex-direction: column;    
     gap: 16px;
 }
 
@@ -183,54 +183,54 @@
     width: 100%;
     height: auto;
     margin: 0;
-    color: var(--white); 
     font-size: 35px;    
-    font-weight: var(--font-weight_medium);
     line-height: 123%;
+    font-weight: var(--font-weight_medium);
+    color: var(--white); 
 }
 
 .selection-tour__content p{
     margin: 0; 
-    color: var(--white);       
     font-size: 17px;    
-    font-weight: var(--font-weight_normal);
     line-height: 142%;
     letter-spacing: -0.2px;
+    font-weight: var(--font-weight_normal);
+    color: var(--white);       
 }
 
 .selection-tour__card-button{
     position: absolute;
     top: 446px;
     left: 30px;
-    bottom: 50px;    
+    bottom: 50px;   
+    display: flex;
+    align-items: center;     
     width: 199px;
     height: 42px;    
-    display: flex;
-    align-items: center;
-    padding: 7px 20px;    
-    gap: 15px;
+    padding: 7px 20px;  
     box-sizing: border-box;
+    gap: 15px;
     border: none;    
     border-radius: 50px;    
     background: transparent;   
-    text-decoration: none;
-    cursor: pointer;
     transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .button-text {
     width: 120px;
     height: 28px;
-    margin: 0;   
-    color: var(--white);     
+    margin: 0;  
     font-size: 23px;    
     font-weight: var(--font-weight_medium);
+    color: var(--white);     
 }
 
 .button-arrow {
     width: 26px;
     height: 26px;
-    background-image: url('../../public/icon/arrow_bt.svg');
+    background-image: url('/public/icon/arrow_bt.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -351,9 +351,9 @@
 
     .selection-tour__content h3{
         width: 100%;
-        font-size: 23px;        
-        font-weight: var(--font-weight_bold);
+        font-size: 23px;  
         letter-spacing: 0.9px;
+        font-weight: var(--font-weight_bold);
     }
 
     .selection-tour__content p{
@@ -377,8 +377,7 @@
         width: auto;
         height: auto;        
         font-size: 16px;
-        font-weight: var(--font-weight_bold);
         line-height: 142%;
+        font-weight: var(--font-weight_bold);
     }
-
 }
