@@ -110,6 +110,15 @@
 }
 
 @media (max-width: 1200px){
+    .images-tour{
+        gap: 98px;
+    }
+
+    .images-tour__container{
+        padding: 0 19px;
+        gap: 20px;
+    }
+    
     .images-tour__group1{
         display: flex;  
         justify-content: center;
@@ -125,6 +134,11 @@
         gap: 20px;   
     }  
 
+    .images-tour__img1,
+    .images-tour__img4{
+        object-fit: fill;
+    } 
+    
     .images-tour__img1, 
     .images-tour__img3, 
     .images-tour__img4, 
@@ -330,4 +344,5 @@
     .images-tour__img13 {
         display: none;
     }
+
 }
